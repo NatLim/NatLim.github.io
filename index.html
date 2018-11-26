@@ -1,11 +1,586 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Natkamol Limapichat</title>
+	<title>Kelvin Koon</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable = no">
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!--Bootstrap CSS-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+	<!--JS-->
+	<script src="JS/scrollspy.js"></script>
+	<script src="JS/navshrink.js"></script>
+	<script src="JS/maps.js"></script>
 
 </head>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<!--Navbar-->
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand home" href="#home">kelvin koon</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#experience">EXPERIENCE</a></li>
+					<li><a href="#projects">PROJECTS</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Jumbotron-->
+	<div class="jumbotron text-center" id="home">
+		<div class="container titlehead">
+			<h1>Kelvin Koon</h1>
+			<div id="typed-strings">
+				<h4>Avid Learner</h4>
+				<h4>Software Developer</h4>
+				<h4>Aspiring Electrical Engineer</h4>
+			</div>	
+			<span id="typed"></span>
+			<div class="element"></div>
+		</div>
+	</div>
+
+	<!--About-->
+	<div class="container-fluid about text-center" id="about">
+		<h2>About</h2>
+		<p class="about">Hello! I'm Kelvin, a third year Electrical Engineering student at the University of British Columbia. My own interests include competitive gaming, figure skating, and meeting new people. Take a look around!</p>
+		<p class="about">Currently, I will am working at <a href="http://www.netgear.com/" target="_blank">NETGEAR</a> as a Software Developer. Here are some of the technologies I am familiar with:</p>
+		<br>
+		<div class="row text-center" >
+			<div class="col-md-4 skills">
+				<p class="skill-head"><b>Programming</b></p>
+				<p>C/C++, Python, JavaScript, MATLAB, Verilog, Assembly</p>
+			</div>
+			<div class="col-md-4 skills">
+				<p class="skill-head"><b>Web Development</b></p>
+				<p>HTML/CSS, NodeJS, Express, MongoDB, JQuery</p>
+			</div>
+			<div class="col-md-4 skills">
+				<p class="skill-head"><b>Hands-On</b></p>
+				<p>Oscilloscope, Soldering, Waterjet, Drill Press, Press Brake, Bandsaw, Shearing</p>
+			</div>
+			<a href="resume.pdf" class="btn btn-lg btn-default" target="_blank">
+				<span class="glyphicon glyphicon-save"></span> Download Resume
+			</a>
+		</div>
+	</div>
+
+	<!--Experience-->
+	<div class="container-fluid experience text-center" id="experience">
+		<h2>Experience</h2>
+		<div class="container text-center">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a class="modal-text" data-toggle="modal" data-target="#netgear"><img src="images/netgear1.png" alt="netgear"></a>
+					<p class='thumbnailhead'>NETGEAR</p>
+					<p class='thumbnaildesc'>Software Developer</p>
+				</div>
+				<div class="modal fade" id="netgear" tabindex="-1" role="dialog" aria-labelledby="netgear" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5>NETGEAR (Aircard)</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p align="left" class=modal-desc">This part will be updated as the work term goes on. Stay tuned!</p>								
+								<p align="left"><b>Languages and Skills</b>: C/C++</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a class="modal-text" data-toggle="modal" data-target="#tbots"><img src="images/exp1.jpg" alt="tbots"></a>
+					<p class='thumbnailhead'>UBC Thunderbots</p>
+					<p class='thumbnaildesc'>Software/Admin Team Member</p>
+				</div>
+				<div class="modal fade" id="tbots" tabindex="-1" role="dialog" aria-labelledby="tbots" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5>UBC Thunderbots Software Team</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<img src="images/tbots1.jpg">
+								<p class="modal-caption">Robocup 2017 in Nagoya, Japan</p>
+								<p align="left" class="modal-desc">UBC Thunderbots is a student-lead autonomous robot soccer team.  We design and build competitive robots to compete in the Small Size League of the international RoboCup Federation. Our team also provides demonstrations for schools and events, such as for EGBC, Geering Up, and UBC Engineering Open House.</p>
+								<p align="left" class="modal-desc">As part of the Mechanical team, our objectives lie with redesigning components such as the shooting mechanism (chipper, kicker, dribbler), drive train, and chassis. Maintenance is also a responsibility to ensure our units are functional for competition and demos.</p>
+								<p align="left" class="modal-desc">Currently, I am part of the software team, where we are handling the system rewrite of our codebase. I am also handling administrative duties including acquiring external funding through sponsorships and organizing demonstrations for events. We are working towards RoboCup 2019 in the hopes of winning Division B.</p>
+								<img src="images/tbots2.JPG">
+								<p class="modal-caption">Internal design of robots.</p>
+								<p align="left"><b>Languages and Skills</b>: C++, Solidworks, Linux Environment, Waterjet, Drill Press, Press Brake</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a class="modal-text" data-toggle="modal" data-target="#ecess"><img src="images/exp2.jpg" alt="ecess"></a>
+					<p class="thumbnailhead">UBC ECESS</p>
+					<p class="thumbnaildesc">VP Finance (Treasurer)</p>
+				</div>
+				<div class="modal fade" id="ecess" tabindex="-1" role="dialog" aria-labelledby="ecess" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5>Electrical and Computer Engineering Student Society</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<img src="images/ecess1.jpg">
+								<p class="modal-caption">ECESS Christmas 2017</p>
+								<p align="left" class="modal-desc">"<a href="http://ubcecess.com/" target="_blank">The ECE Student Society (ECESS) </a>represents undergraduate Electrical & Computer Engineering (ECE) students at the University of British Columbia. With over 1000 members, we are the largest of all engineering departmental clubs. Our mission is to enrich the Electrical and Computer Engineering (ECE) experience by organizing academic and professional development opportunities, social events, and services for ECE undergraduate students, and to maintain a meaningful relationship with the Engineering Undergraduate Society, the ECE department, and the external community to the benefit of all involved."</p>
+								<p align="left" class="modal-desc">Currently, my position on the team is as VP Finance. As the treasurer, I am in charge of the financial base of ECESS through tracking detailed revenue and expenses. Managing the cash flow of the ECE student body allows the club to host social and professional development events, from review sessions to industry networking. I am also responsible for communications with the AMS for budget drafting and maintaining the club's financial standing in good condition.</p>
+								<p align="left" class="modal-desc">In the past, my position on the team was as an Event Assistant. Responsibilities included upholding office hours and assisting in event planning (such as for Year End Gala).</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a class="modal-text" data-toggle="modal" data-target="#isit"><img src="images/exp3.jpg" alt="isit"></a>
+					<p class="thumbnailhead">Arts ISIT</p>
+					<p class="thumbnaildesc">Technical Support Analyst</p>
+				</div>
+				<div class="modal fade" id="isit" tabindex="-1" role="dialog" aria-labelledby="isit" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5>Arts ISIT Technical Support Analyst</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<img src="images/isit1.jpg">
+								<p class="modal-caption">Workshop Poster (Courtesy of Arts ISIT)</p>
+								<p align="left" class="modal-desc">Arts Instructional Support and Information Technology is a technology support unit for the Faculty of Arts. The team's main purpose is to support the faculty in integrating technologies to an improved learning environment.</p>
+								<p align="left" class="modal-desc">My position as a technical support analyst involves helping faculty with learning technology. This involved interacting with faculty and staff such as professors with questions about tools such as the Canvas learning system. Our responsiblity is transferring courses from the old Blackboard system to the new Canvas learning system, as well as providing support for higher education tools at UBC.</p>
+								<p align="left" class="modal-desc">As part of my first co-op term, I have used R to extract data from the database of courses. I have also developed scripts in Python to automate the creation and deletion of Canvas courses using the <a href="https://canvas.instructure.com/doc/api/index.html" target="_blank">Canvas API</a> through sending requests. I have experienced basic web development through creating ePortfolio webpages for students, which are used to showcase their projects and experiences to potential employers. Working with faculty from over 15 departments, I am proficient in communicating ideas through both online and in-person support.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a class="modal-text" data-toggle="modal" data-target="#empty"><img src="images/emptybox.jpg" alt="empty"></a>
+					<p class='thumbnailhead'>Coming soon...</p>
+					<p class='thumbnaildesc'>Stay tuned</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a class="modal-text" data-toggle="modal" data-target="#empty"><img src="images/emptybox.jpg" alt="empty"></a>
+					<p class='thumbnailhead'>Coming soon...</p>
+					<p class='thumbnaildesc'>Stay tuned</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--Projects-->
+<div class="container-fluid projects text-center" id="projects">
+	<h2>Projects</h2>
+	<div class="container text-center">
+		<button type="button" class="btn btn-lg btn-default" data-toggle="collapse" data-target="#majorproj">See Projects</button>
+		<div id="majorproj" class="collapse">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#ladderscraper"><img src="images/ladderscraper1.jpg" alt="ladderscraper"></a>
+						<p class="thumbnailhead">Pokémon Showdown Scraper</p>
+						<p class="thumbnaildesc">Personal Project (Aug 2018)</p>
+					</div>
+					<div class="modal fade" id="ladderscraper" tabindex="-1" role="dialog" aria-labelledby="ladderscraper" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Pokémon Showdown VGC 2018  Ladder Scraper</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/ladderscraper1.jpg">
+									<p class="modal-caption">Verified results of ladder scraper via Pokémon Showdown</p>
+									<p align="left" class="modal-desc">Pokémon Showdown is a competitive online battle simulator supporting multiple game formats. With a live ELO system in place, users can compete to climb the rankings of the ladder. As a fan of the VGC 2018 official format, I collected teams into a CSV file for data analysis purposes leading up to the 2018 World Championships without manually analyzing 500 replays.</p>
+									<p align="left" class="modal-desc">The ladder scraper sends a GET request to the live Ladder to gather the Top 500 users active in the format. Iterating through the list of users, two Selenium drivers are used to automate the process. The first driver cycles through a user's replays to identify the most recent VGC 2018 replay. The second driver fetches the replay and parses through the battle log to identify the player's full team. The teams and users are saved into a CSV file at the end of the scraping.</p>
+									<p align="left" class="modal-desc">To view the source code, you can visit <a href="https://github.com/kelvinkoon/vgc18-ladder-scraper" target="_blank">here</a>.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages:</b> Python (Selenium)</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#countryhop"><img src="images/countryhop1.JPG" alt="countryhop"></a>
+						<p class="thumbnailhead">Crazy Country Hop</p>
+						<p class="thumbnaildesc">Personal Project (May 2018)</p>
+					</div>
+					<div class="modal fade" id="countryhop" tabindex="-1" role="dialog" aria-labelledby="countryhop" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Crazy Country Hop</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/countryhop.gif">
+									<p class="modal-caption">Guess a state, find out how far away you were</p>
+									<p align="left" class="modal-desc">Crazy Country Hop is a simple web application made using the React framework that utilizes the Google Maps API to create a guessing game. When the game begins, a target is generated from the list of 50 American states. When a valid guess is submitted, the game returns the distance between the guess and target states. This gives the user a sense of whether their series of guesses are closer or father to the target. The app was stylized using the Bootstrap package.</p>
+									<img src="images/countryhop2.JPG">
+									<p class="modal-caption">Returning the distance from target state</p>
+									<p align="left" class="modal-desc">Having limited experience in JavaScript, Crazy Country Hop was a great opportunity explore the React framework and how it works (such as states and props). In addition, Babel made stylizing the React components similar to that of HTML/CSS with Bootstrap. This served as a stepping stone into front-end development.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages: </b>JavaScript, React</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#translator"><img src="images/translate1.png" alt="translator"></a>
+						<p class="thumbnailhead">Pokémon Moveset Translator</p>
+						<p class="thumbnaildesc">Personal Project (Apr 2018)</p>
+					</div>
+					<div class="modal fade" id="translator" tabindex="-1" role="dialog" aria-labelledby="translator" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Pokémon JP->EN Moveset Chrome Extension</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/translate2.jpg">
+									<p class="modal-caption">Japanese tournament team report untranslated</p>
+									<p align="left" class="modal-desc">A common practice in competitive Pokémon is for players to publish reports online describing your team-building process following tournaments. These reports are an integral part to developing the competitive scene, as they allow players to gain a deeper understanding of what is viable and continue to explore the competitive format. With one of the biggest playerbases, the Japanese scene is responsible for a large part of competitive content. The aim of this Chrome extension is to allow English-speaking players to be able to read the movesets presented.</p>
+									<img src="images/translate3.jpg">
+									<p class="modal-caption">Translated report using extension</p>
+									<p align="left" class="modal-desc">Though the extension does not currently support Kanji characters, it identifies the Pokémon's name, nature, ability, item, and moveset. The extension's logic is based on traversing through the HTML page to handle text elements and replacing matching Japanese text to their English equivalents using a dictionary.</p>
+									<p align="left" class="modal-desc">To test it out yourself, you can visit <a href="https://chrome.google.com/webstore/detail/pokemon-japanese-%3Eenglish/eoiflfnninooeknmhjmllkigadljkmic" target="_blank">here</a>.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages:</b> HTML, CSS, JavaScript</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#scraper"><img src="images/scraper1.JPG" alt="scraper"></a>
+						<p class="thumbnailhead">Amazon Games Scraper</p>
+						<p class="thumbnaildesc">Personal Project (Mar 2018)</p>
+					</div>
+					<div class="modal fade" id="scraper" tabindex="-1" role="dialog" aria-labelledby="scraper" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Amazon Games Scraper</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/scraper1.JPG">
+									<p class="modal-caption">Returning least expensive results for "Nier" between $40.00 and $200.00</p>
+									<p align="left" class="modal-desc">Using the <a href="https://pypi.python.org/pypi/python-amazon-simple-product-api" target="_blank">Amazon Simple Product API</a>, the scraper returns the list of 5 items from either lowest or highest price. The search also returns the title, price, and product ID. Tkinter was used for the GUI for its ease of use with Python.</p>
+									<img src="images/scraper2.JPG">
+									<p class="modal-caption">Returning most expensive results for "Pokemon" up to $1000.00</p>
+									<p align="left" class="modal-desc">Considerations with the user interface included ensuring all fields were filled correctly, as well as cases where searches did not yield enough results due to specifications. The specifications were included with the intent of quality control for searches. Minimum and maximum prices could be adjusted, as well as the number of items returned. In conjunction with the Sort option, the user can change their parameters to explore more search options. The intent of this application was to explore what the Amazon API offered, as well as working with Python and Tkinter.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages: </b>Python (Tkinter)</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#laserprinter"><img src="images/laserprinter1.JPG" alt="laserprinter"></a>
+						<p class="thumbnailhead">3D Printer Simulation</p>
+						<p class="thumbnaildesc">Course Project (Term W1 2017)</p>
+					</div>
+					<div class="modal fade" id="laserprinter" tabindex="-1" role="dialog" aria-labelledby="laserprinter" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Selective Laser Sintering 3D Printer</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/laserprinter1.JPG">
+									<p class="modal-caption">Simulink model of 3D printer</p>
+									<p align="left" class="modal-desc">Our team was tasked with building a 3D printer simulation. The project was split into two parts: modeling the system and designing a PID controller to minimize error.</p>
+									<img src="images/laserprinter2.JPG">
+									<p class="modal-caption">Comparison of actual and desired plots</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages: </b>MATLAB, Simulink</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#drivetrain"><img src="images/drivetrain1.JPG" alt="drivetrain"></a>
+						<p class="thumbnailhead">Drive Train Redesign</p>
+						<p class="thumbnaildesc">UBC Thunderbots Project (Sept 2016 - Nov 2017)</p>
+					</div>
+					<div class="modal fade" id="drivetrain" tabindex="-1" role="dialog" aria-labelledby="drivetrain" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Drive Train Redesign</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/drivetrain2.JPG">
+									<p class="modal-caption">Full assembly of internal drive train</p>
+									<p align="left" class="modal-desc">The idea for an internal gearing system for our drive train began with from carpet debris. Carpet fluff would cause the gearing system to jam, creating additional stress on the motor. A ring gear would shield the system, allowing it to continue functioning during gameplay.</p>
+									<img src="images/drivetrain3.JPG">
+									<p class="modal-caption">View of spur gear and ring gear system</p>
+									<p align="left" class="modal-desc">On the mechatronics team, my duty was to prototype the gearing system using SolidWorks. In particular, exploring the changes with a new gearing system in aspects such as new gear ratios and additional weight was a challenge. Physical prototyping was primarily done using components produced through waterjet. Constant changes were made to the dimensions of the components such as the motor mount to ensure the system would function.</p>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/TPUJgj4GpPI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									<p class="modal-caption">Driven internal system</p>
+									<p align="left" class="modal-desc">The functioning prototype is a step towards advancing the robot's drive train design in the years to come. Despite having limited mechatronics experience, working on the drive train was an insightful project, being an excellent opportunity to prototype in a team.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages:</b> SolidWorks</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#linerobot"><img src="images/linerobot1.JPG" alt="linerobot"></a>
+						<p class="thumbnailhead">Magnetic Line Following Robot</p>
+						<p class="thumbnaildesc">Course Project (Term W2 2016)</p>
+					</div>
+					<div class="modal fade" id="linerobot" tabindex="-1" role="dialog" aria-labelledby="linerobot" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Magnetic Line Following Robot</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/linerobot1.JPG">
+									<p class="modal-caption">Final product for demonstration</p>
+									<p align="left" class="modal-desc">The magnetic-field-aware robot was designed to follow a track formed by a wire carrying an AC current. A transmitter also had to be designed to send commands to the car through modulating the current. The final design also included turn signals, reverse lights, and an auditory cue to indicate commands received.</p>
+									<img src="images/linerobot2.JPG">
+									<p class="modal-caption">Transmitter to send commands</p>
+									<p align="left" class="modal-desc">The car used five tank circuits, comprised of LC oscillators, to aid the robot's line centering. The software would adjust the robot's trajectory based on if one of the inductor readings would be greater than the other. In our team, I was tasked with the receiver code. Transmitting the Universal Asynchronous Receiver/Transmitter (UART) data was the method of sending commands to the robot, including turning and going backwards. The UART was tested by connecting a second microcontroller and using built-in functions to send and receive data. In addition, the team's responsibilites included shaping the chassis and circuit design for components such as the H-Bridge for the motors. This design project was a fantastic way to demonstrate the software and hardware learned in the course.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages:</b> C, Circuit Design, Press Brake, Git</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#oven"><img src="images/oven1.JPG" alt="oven"></a>
+						<p class="thumbnailhead">Reflow Oven Controller</p>
+						<p class="thumbnaildesc">Course Project (Term W2 2016)</p>
+					</div>
+					<div class="modal fade" id="oven" tabindex="-1" role="dialog" aria-labelledby="oven" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Reflow Oven Controller</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/oven1.JPG">
+									<p class="modal-caption">Final reflow oven controller design</p>
+									<p align="left" class="modal-desc">The reflow oven controller was designed for the reflow soldering of surface mount electronic components to PCBs. Programmed in 8051 Assembly, the controller regulated the temperature profile to ensure the components would adhere to the PCB. </p>
+									<img src="images/oven2.JPG">
+									<p class="modal-caption">Oven with full set up</p>
+									<p align="left" class="modal-desc">The reflow oven's warning objective was to follow the temperature profile outlined in the project document. As such, the temperature profile was modeled was a finite state machine where the temperature would be set for a period of time. The temperature was determined through the use of a thermocouple cicuit. Our sub-team was responsible for the design of the user interface. Our warning consideration in the design included how to navigate through each menu to specify the parameters for soak temperature, soak time, reflow temperature, and reflow time. Although our display was limited by its size, the interface was intended to be intuitive and easy to navigate with the option to select left, right, enter, or back to the last menu.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages:</b> 8051 Assembly, Circuit Design</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#risc"><img src="images/risc1.jpg" alt="risc"></a>
+						<p class="thumbnailhead">RISC Machine</p>
+						<p class="thumbnaildesc">Course Project (Term W1 2016)</p>
+					</div>
+					<div class="modal fade" id="risc" tabindex="-1" role="dialog" aria-labelledby="risc" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>RISC Machine</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/risc1.jpg">
+									<p class="modal-caption">RISC machine implemented on the FPGA</p>
+									<p align="left" class="modal-desc">My lab partner and I were tasked with implementing a Reduced Instruction Set Computer (RISC) to the FPGA board. Split into three parts, the lab involved implementing a datapath with registers to create a program to perform arithmetic operations.</p>
+									<img src="images/risc2.jpg">
+									<p class="modal-caption">RISC datapath</p>
+									<p align="left" class="modal-desc">The machine further built upon the datapath by adding a finite state machine to automate control inputs and adding an instruction register alongside read-write memory.</p>
+									<img src="images/risc3.JPG">
+									<p class="modal-caption">CPU state machine and datapath components</p>
+									<p align="left" class="modal-desc">Finally, the machine added supporting branches, similar to those in Assembly. This would allow the use to choose the instruction based upon the result of the computation. The result of the machine was a simple RISC machine implementedin Verilog that served as an introduction to Assembly.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages:</b> Verilog</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a class="modal-text" data-toggle="modal" data-target="#jsgame"><img src="images/jsgame1.JPG" alt="jsgame"></a>
+						<p class="thumbnailhead">LA Noir-ish</p>
+						<p class="thumbnaildesc">Course Project (Jul 2016 - Aug 2016)</p>
+					</div>
+					<div class="modal fade" id="jsgame" tabindex="-1" role="dialog" aria-labelledby="jsgame" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>"LA Noire-ish" Game</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/jsgame1.JPG">
+									<p class="modal-caption">Overview of game interface</p>
+									<p align="left" class="modal-desc">For my JavaScript course's final project, my partner and I decided to make a detective-themed text-based game, incorporating elements learned from the span of the course.</p>
+									<img src="images/jsgame2.JPG">
+									<p class="modal-caption">Demonstration of interacting with items ("use gun")</p>
+									<img src="images/jsgame3.JPG">
+									<p class="modal-caption">Game over demonstration</p>
+									<p align="left" class="modal-desc">The game supported simple instructions for navigation (north, west, south, east) and interacting with the rooms. Upon reading the room's description, players may take items or traverse to another room. The game also featured a graphical overlay of the rooms to help the user keep track of their location. My responsibility for the project involved developing the interactive rooms and bringing elements of the game to form a cohesive story. I was also tasked with ensuring items interacted properly, as well as debugging. LA Noir-ish was an insightful introduction to what JavaScript can be capable of.</p>
+									<p align="left" class="modal-desc"><b>Skills and Languages:</b> HTML, CSS, JavaScript</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Contact-->
+<div class="container-fluid contact text-center" id="contact">
+	<h2>Contact Me</h2>
+	<p class="locationdesc1">Currently located in: </p>
+	<p class="locationdesc2"><span class="glyphicon glyphicon-map-marker"></span> Vancouver, BC</p>
+	<div id="googleMap"></div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZgEOZYlEZqQU2i9E8IOQ5Nz9juIXlMmg&callback=myMap"></script>
+	<a href="mailto:kkoon@shaw.ca" target="_blank"><i class="fas fa-envelope"></i></a>
+	<a href="https://github.com/kelvinkoon" target="_blank"><i class="fab fa-github"></i></a>
+	<a href="https://www.linkedin.com/in/kelvinkoon/" target="_blank"><i class="fab fa-linkedin"></i></a>
+	<a href="https://www.instagram.com/notcelsiusdeg/" target="_blank"><i class="fab fa-instagram"></i></a>
+	<div class="footer-text">
+		<p>Copyright © 2018 Kelvin Koon</p> 
+	</div>
+
+	<!-- typedJS -->
+	<script src="JS/typed.js"></script>	
+	<script>
+		var typed = new Typed('.element', {
+			stringsElement: '#typed-strings',
+			typeSpeed: 60,
+		});
+	</script>
+</div>
 </body>
 </html>
