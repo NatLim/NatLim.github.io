@@ -8,3 +8,41 @@
     bottom: 0;
 
 }
+
+.videosize {
+ position:absolute;
+ z-index:-1;
+ top:0;
+ left:0;
+ width:100vw;
+ height:100%;
+}
+
+.jumbotron-bg {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.jumbotron-bg video {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width:100%;
+  height:100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity:1;
+}
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
