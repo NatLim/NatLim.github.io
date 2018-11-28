@@ -1,6 +1,13 @@
 .my-bg{
-  background: url(images/BGtop2.gif);
   background-size: cover;
   height: 100%;
   padding-top: 56.25%;
+}
+
+#BGvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
