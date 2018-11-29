@@ -59,8 +59,9 @@
   height:100%;
   object-fit: cover;
   opacity:0.9;
-  background-color: rgba(184,135,70,0.76);
-  z-index: -2
+  z-index: -2;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
 
 .jumbotron-bg .my-text{
