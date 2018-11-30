@@ -1,7 +1,7 @@
 .Cbox{
   position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
+//  overflow-y: scroll;
+//  overflow-x: hidden;
   min-height: 94vh;
   background-color: rgba(0,0,0,0.5);
   z-index: 1;
@@ -10,6 +10,11 @@
 #about{
   background-image: url(images/test2.jpg);
   z-index: -1;
+}
+
+.textbox3{
+  padding-top: 15%;
+  padding-right: 5%;
 }
 
 .col-sm-5{
@@ -22,7 +27,7 @@
 }
 
 .side h3{
-  font-size: 10vmin;
+//  font-size: 8vmin;
 }
 
 .videosize {
