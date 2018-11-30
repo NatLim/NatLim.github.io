@@ -26,7 +26,6 @@
 }
 
 .textbox2{
-
   margin-top: 35vh;
   color: white;
 }
@@ -41,8 +40,8 @@
   background-color: rgba(39,48,46,0.3);
   border: none;
   color: white;
-  font-size: 60px;
   z-index: 1;
+  font-size: 5vmin;
 }
 
 .a{
