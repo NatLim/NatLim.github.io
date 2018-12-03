@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Make sure that popper is before bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     <script src="js/Cscript.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -34,6 +37,7 @@
         <div class="container-fluid text-center">
           <a href="https://www.linkedin.com/in/lnatkamol" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="mailto:n.limapichat@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a href="#" title="+1-778-861-6285" data-toggle="popover" data-placement="bottom"><i class="fas fa-phone-square"></i></a>
         </div>
       </div>
     </div>
@@ -57,25 +61,20 @@
   </div>
 </div>
 
-<div class="container-fluid Cbox" id="section2">
-<!--
-      <div class="BGimg">
-        <video src="images/webm2.webm" autoplay muted loop>
-      </div>
--->
+<div class="container-fluid Cbox" id="techproj">
   <div class="row">
-    <div class="col-sm-3 textbox3">
-      <a href="#home">test</a>
+    <div class="col-sm-3 side text-center">
+      <h2>Technical Projects</h2>
     </div>
     <div class="col-sm-9">
     </div>
   </div>
 </div>
 
-<div class="container-fluid Cbox" id="section3">
+<div class="container-fluid Cbox" id="skillexp">
   <div class="row">
-    <div class="col-sm-3 textbox3">
-      <a href="#home">test</a>
+    <div class="col-sm-3 side text-center">
+      <h2>Skills & Experience</h2>
     </div>
     <div class="col-sm-9">
     </div>
@@ -104,15 +103,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Home</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section2">Link2</a>
+                    <a class="nav-link" href="#techproj">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link3</a>
+                    <a class="nav-link" href="#skillexp">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#involvement">Involvement</a>
@@ -122,6 +120,8 @@
       </div>
   </nav>
 </div>
+
+
 </body>
 
 </html>
