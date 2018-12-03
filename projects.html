@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style2.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="js/Cscript.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
@@ -23,13 +26,16 @@
   </head>
 
 <body>
-  <div id="accordion">
+  <div class="container-fluid">
+    <h1>Technical Projects</h1>
+  </div>
 
+  <div id="accordion">
   <div class="card">
       <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            <div class="card-header">
-        Collapsible Group Item #1
-            </div>
+        <div class="card-header">
+          Motor Design and Development - Laser Control System
+        </div>
       </a>
     <div id="collapseOne" class="collapse" data-parent="#accordion">
       <div class="card-body">
@@ -39,11 +45,11 @@
   </div>
 
   <div class="card">
-    <div class="card-header">
-      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-        Collapsible Group Item #2
-      </a>
-    </div>
+    <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+      <div class="card-header">
+        SLS 3D Printer Control System modeling
+      </div>
+    </a>
     <div id="collapseTwo" class="collapse" data-parent="#accordion">
       <div class="card-body">
         Lorem ipsum..
@@ -52,17 +58,70 @@
   </div>
 
   <div class="card">
-    <div class="card-header">
-      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-        Collapsible Group Item #3
-      </a>
-    </div>
+    <a class="card-link" data-toggle="collapse" href="#collapseThree">
+      <div class="card-header">
+        Magnetic Field Track Controlled Robot
+      </div>
+    </a>
     <div id="collapseThree" class="collapse" data-parent="#accordion">
       <div class="card-body">
         Lorem ipsum..
       </div>
     </div>
   </div>
+
+  <div class="card">
+    <a class="card-link" data-toggle="collapse" href="#collapseFour">
+      <div class="card-header">
+        Reflow Oven Controller
+      </div>
+    </a>
+    <div id="collapseFour" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <a class="card-link" data-toggle="collapse" href="#collapseFive">
+      <div class="card-header">
+        Reduced Instruction Set Computer (RISC)
+      </div>
+    </a>
+    <div id="collapseFive" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <a class="card-link" data-toggle="collapse" href="#collapseSix">
+      <div class="card-header">
+        Microcontroller Projects
+      </div>
+    </a>
+    <div id="collapseSix" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <a class="card-link" data-toggle="collapse" href="#collapseSeven">
+      <div class="card-header">
+        FPGA Projects
+      </div>
+    </a>
+    <div id="collapseSeveb" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
 </div>
 <a href="#popover" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Click</a>
 </body>

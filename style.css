@@ -37,7 +37,9 @@
   z-index: 0;
 }
 #skillexp{
-  background-color: rgba(255,219,212);
+  //background-color: rgba(255,219,212);
+  background-image: url(images/BGgrad3.png);
+  background-size: 100%;
   z-index: 0;
 }
 #involvement{
