@@ -72,10 +72,6 @@
   padding-top: 10%;
 }
 
-.side h3{
-//  font-size: 8vmin;
-}
-
 .videosize {
  position:absolute;
  z-index:-1;
@@ -184,4 +180,12 @@
 
 .CCustom{
   margin-bottom: 6vh;
+}
+
+h6{
+  font-size: 12px;
+}
+
+h4{
+  font-family: Karla;
 }
