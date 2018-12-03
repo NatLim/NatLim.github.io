@@ -40,8 +40,9 @@
   background-color: rgba(255,219,212);
   z-index: 0;
 }
-#section4{
-  background-color: rgba(178, 193, 236);
+#involvement{
+  //background-color: rgba(177, 212, 239);
+  background-image: url(images/test3.jpg);
   z-index: 0;
 }
 #section5{
@@ -49,8 +50,14 @@
   z-index: 0;
 }
 
+#involvement img{
+  //padding-bottom: 10%;
+  height: 60vmin;
+  width: auto;
+}
+
 .textbox3{
-  padding-top: 15%;
+  padding-top: 10%;
   padding-right: 5%;
 }
 
