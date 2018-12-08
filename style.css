@@ -12,6 +12,11 @@
   font-size: 20px;
 }
 
+.CDropDown{
+  margin-top: 5%;
+
+}
+
 .BGimg{
     z-index: -2;
     position: absolute;

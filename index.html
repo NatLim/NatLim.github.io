@@ -67,42 +67,275 @@
     <div class="col-sm-3 side text-center">
       <h2>Technical Projects</h2>
     </div>
-    <div class="col-sm-9 textbox3">
-      <p>For a more in-depth look at my projects, see the <a href="projects.html">Technical Projects</a> page.</p><br>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="container-fluid">
-              <h4>Motor Design and Development - Laser Control System <br>
-              <small>SolidWorks / Mechanical Prototyping</small> </h4><br>
+    <div class="col-sm-9">
+      <div class="container-fluid CDropDown">
+            <div id="accordion">
+            <div class="card">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  <div class="card-header">
+                    <h4>Motor Design and Development - Laser Control System <br>
+                    <small>SolidWorks / Mechanical Prototyping</small> </h4>
+                  </div>
+                </a>
+              <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p>The scope of this project was to build a motor control system capable of drawing an image using a pointer laser moved by a permanent magnet DC motor. The project was split into two team, one working with the mechanical side. Handling the motor and the physical structure for the electrical system to be integrated on to. The other team handles the electrical side of the project. Design PCB and PID controllers.</p>
+                  <p>In this project, my role was the mechanical design lead. I handled all the designs, including the rotor lamination, casing, brushing system, and the overall structure. All the design was done in SolidWorks. I was also responsible for most of the prototyping and fabrication, working with 3D printing, waterjet cutting, and other machining. I’ve also worked closely with the electrical team to ensure smooth integration of the two system.</p>
+                  <p>Team member: Natkamol Limapichat, Savio Neyyan, Muhammed Initishar Islam, Aneet Lakhani.</p>
+                  <div class="container-fluid CCustom">
+                    <div id="myCarousel" class="carousel slide center-block" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block" src="images/motor.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/motor2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/motor3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/motor4.jpg" alt="Fourth slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="container-fluid">
-              <h4>SLS 3D Printer Control System modeling <br>
-              <small>Matlab / Simulink</small></h4><br>
-            </div>
-            <div class="container-fluid">
-              <h4>Magnetic Field Track Controlled Robot <br>
-              <small>C8051F38x Microcontroller / STM32F051 Microcontroller / C / ARM</small> </h4><br>
-            </div>
-          </div>
-          <div class="col-sm-6">
 
-            <div class="container-fluid">
-              <h4>Reflow Oven Controller <br>
-              <small>AT89LP52 Microcontroller / 8051 Assembly / Python</small> </h4><br>
+            <div class="card">
+              <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                <div class="card-header">
+                  <h4>SLS 3D Printer Control System modeling <br>
+                  <small>Matlab / Simulink</small></h4>
+                </div>
+              </a>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p>coming soon</p>
+                  <div class="container-fluid CCustom">
+                    <div id="myCarousel2" class="carousel slide center-block" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block" src="images/placeholder.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/placeholder.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="..." alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="container-fluid">
-              <h4>Reduced Instruction Set Computer (RISC) <br>
-              <small>FPGA Board / Verilog / ARM</small> </h4><br>
+
+            <div class="card">
+              <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                <div class="card-header">
+                  <h4>Magnetic Field Track Controlled Robot <br>
+                  <small>C8051F38x Microcontroller / STM32F051 Microcontroller / C / ARM</small> </h4>
+                </div>
+              </a>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p>The scope of this project was to build an autonomous robot that could traverse a magnetic track, while receiving and performing command from the communication system. The robot only had the guide wire that generate a magnetic field as the only source of tracking and communication. The robot was controlled by an F38x microcontroller, which was coded in C, while the control circuit was controlled with an STM32x microcontroller coded in ARM.</p>
+                  <p>In this project, my role was the overall team lead. I oversaw all the core programming and designing as well as constructing the robot circuit. Some of the things I programmed includes the command instruction set. It translates the command received to the correct voltage output to the motor, as well as a negative feedback self-adjusting system. One of the biggest challenged in this project was the communication system. The copper coil that we used as a sensor wasn’t giving a clean enough signal to be used with the microcontroller’s USART protocol. We ended up coding our own communication signal using a slower rate so that the signal was easier to read. </p>
+                  <p>Team member: Natkamol Limapichat, Muhammed Intishar Islam, Arslan Bhatti, Mike Yuan, Hamza Ahmed.</p>
+                  <div class="container-fluid CCustom">
+                    <div id="myCarousel3" class="carousel slide center-block" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block" src="images/placeholder.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/placeholder.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="..." alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="container-fluid">
-              <h4>Microcontroller Projects</h4><br>
+
+            <div class="card">
+              <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                <div class="card-header">
+                  <h4>Reflow Oven Controller <br>
+                  <small>AT89LP52 Microcontroller / 8051 Assembly / Python</small> </h4>
+                </div>
+              </a>
+              <div id="collapseFour" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                  <div class="container-fluid CCustom">
+                    <div id="myCarousel4" class="carousel slide center-block" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block" src="images/placeholder.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/placeholder.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="..." alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="container-fluid">
-              <h4>FPGA projects</h4><br>
+
+            <div class="card">
+              <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                <div class="card-header">
+                  <h4>Reduced Instruction Set Computer (RISC) <br>
+                  <small>FPGA Board / Verilog / ARM</small> </h4>
+                </div>
+              </a>
+              <div id="collapseFive" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                  <div class="container-fluid CCustom">
+                    <div id="myCarousel5" class="carousel slide center-block" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block" src="images/placeholder.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/placeholder.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="..." alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel5" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel5" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <a class="card-link" data-toggle="collapse" href="#collapseSix">
+                <div class="card-header">
+                  <h4>Microcontroller Projects</h4>
+                </div>
+              </a>
+              <div id="collapseSix" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                  <div class="container-fluid CCustom">
+                    <div id="myCarousel6" class="carousel slide center-block" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block" src="images/placeholder.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/placeholder.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="..." alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel6" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel6" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <a class="card-link" data-toggle="collapse" href="#collapseSeven">
+                <div class="card-header">
+                  <h4>FPGA Projects</h4>
+                </div>
+              </a>
+              <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                  <div class="container-fluid CCustom">
+                    <div id="myCarousel7" class="carousel slide center-block" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block" src="images/placeholder.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="images/placeholder.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block" src="..." alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel7" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel7" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
-        </div>
+          </div>
       </div>
     </div>
   </div>
