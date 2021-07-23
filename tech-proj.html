@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Natkamol Limapichat - Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Natkamol Limapichat</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="#">Electrical</a>
+							<ul>
+								<li><a href="#tcu">Temperature Control System</a></li>
+								<li><a href="#motor">Motor Design and Development</a></li>
+								<li><a href="#robot">Magnetic Field Track Controlled Robot</a></li>
+								<li><a href="#mems">MEMS Accelerometer</a></li>
+								<li><a href="#nand3">NAND3 - Layout Design</a></li>
+								<li><a href="#sls">SLS 3D Printer Control System modeling</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Software</a>
+							<ul>
+								<li><a href="#elevatorsim">ElevatorSim</a></li>
+								<li><a href="#projectMBC">ProjectMBC</a></li>
+							</ul>
+						</li>
+						<li><a href="#footer" class="button primary">Contact Me</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="#" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Technical Projects</h2>
+							<p>This is a summary of projects that I've worked on during my studies, along with some personal project. The top menu bar is available for quick navigation.</p>
+						</header>
+
+						<!-- Content -->
+							<section id="tcu">
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/tcu1.PNG" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/tcu4.PNG" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/tcu3.jpg" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/tcu2.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<header>
+									<h3>Temperature Control System - Environmental Enclosure for a Single-Cell Inkjet Printer</h3>	
+									<p>Thermoelectric Cooler-Heater (Peltier) / Arduino / Simulink / Solidworks</p>
+								</header>
+								<p>The scope of this entire project was to design and construct an enclosure for a single-cell inkjet printer being developed Bio-Medical Micro-Devices (BioMEMS) Lab at UBC. This was a capstone project consisted of 5 team member. The purpose of the enclosure was to provide a suitable environment for cell samples with 3 key factors: temperature, humidity, sterility.</p>
+								<p>My role was to design and develop the electronics and the control of the temperature control unit (TCU), along with testing and validations. To simplified, the TCU was a housing for a well plate that could regulate the temperature. The main requirement for the TCU was to be able output and maintain a temperature range of 0°C - 80°C, with high stability. The TCU mainly consist of a thermoelectric cooler-heater (peltier), a thermistor, motor driver controlled by an Arduino Uno microcontroller.</p>
+								<ul>
+									<li> I researched and compiled options for the electronic components that would fulfilled the requirement and budgetary constraint.</li>
+									<li>I developed a model for the thermoelectric cooler-heater using MATLAB to design a PID controller for the system.</li>
+									<li>I coded the control logics, along with other electronics such as sensors and power driver in Arduino microcontroller.</li>
+									<li> I provided a comprehensive report along with rigorous testing and validation of the TCU.</li>
+								</ul>
+								<p>*due to special circumstances, the final iteration of the project was not completed</p>
+							</section>
+
+							<hr />
+
+							<section id="motor">
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/motor.jpg" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/motor2.jpg" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/motor3.jpg" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/motor4.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<header>
+									<h3>Motor Design and Development - Laser Control System</h3>	
+									<p>SolidWorks / Mechanical Prototyping</p>
+								</header>
+								<p>The scope of this project was to build a motor control system capable of drawing an image using a pointer laser moved by a permanent magnet DC motor. The project was split into two team, one working with the mechanical side. Handling the motor and the physical structure for the electrical system to be integrated on to. The other team handles the electrical side of the project. Design PCB and PID controllers.</p>
+								<p>In this project, my role was the mechanical design lead. I handled all the designs, including the rotor lamination, casing, brushing system, and the overall structure. All the design was done in SolidWorks. I was also responsible for most of the prototyping and fabrication, working with 3D printing, waterjet cutting, and other machining. I’ve also worked closely with the electrical team to ensure smooth integration of the two system.</p>						
+							</section>
+
+							<hr />
+
+							<section id="robot">
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">										
+										<div class="col-6 col-6-medium"><span class="image fit">
+											<video class="d-block" autoplay muted loop>
+												<source src="images/291 2.mp4" type="video/mp4">
+											</video>
+										</span></div>
+										<div class="col-6 col-6-medium"><span class="image fit">
+											<video class="d-block" autoplay muted loop>
+												<source src="images/291 3.mp4" type="video/mp4">
+											</video>
+										</span></div>		
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/291.jpg" alt="" /></span></div>				
+									</div>
+								</div>
+								<header>
+									<h3>Magnetic Field Track Controlled Robot</h3>	
+									<p>C8051F38x Microcontroller / STM32F051 Microcontroller / C / ARM</p>
+								</header>
+								<p>The scope of this project was to build an autonomous robot that could traverse a magnetic track,
+									while receiving and performing command from the communication system. The robot only had the guide wire that generate a magnetic field as the only source of tracking and communication. The robot was controlled by an F38x microcontroller, which was coded in C, while the control circuit was controlled with an STM32x microcontroller coded in ARM.</p>
+								<p>In this project, my role was the overall team lead. I oversaw all the core programming and designing
+									as well as constructing the robot circuit. Some of the things I programmed includes the command
+									instruction set. It translates the command received to the correct voltage output to the motor, as well as a negative feedback self-adjusting system. One of the biggest challenged in this project was the communication system. The copper coil that we used as a sensor wasn’t giving a clean enough
+									signal to be used with the microcontroller’s USART protocol. We ended up coding our own
+									communication signal using a slower rate so that the signal was easier to read.</p>						
+							</section>
+
+							<hr />
+
+							<section id="mems">
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/mems1.PNG" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/mems2.PNG" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/mems3.PNG" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/mems4.PNG" alt="" /></span></div>
+									</div>
+								</div>
+								<header>
+									<h3>MEMS Accelerometer – design and analysis</h3>	
+									<p>SolidWorks / Matlab / Simulink / Simscape</p>
+								</header>
+								<p>The scope of this project was to design a capacitive single axis MEMS accelerometer to be used in a car airbag deployment system. The accelerometer must fulfill the requirement of -40G to 40G sensing range and frequency bandwidth between 0-400Hz.</p>
+								<p>I perform a general analysis in Matlab to determine the design parameter such as the mass, spring constant, capacitance of the system. I implemented a Simulink model to perform a system-level analysis and simulation of the system. An energy flow model was implemented in Simscape to analyse the physical network circuit of the microsystem. The mechanical design and simulation of the accelerometer was done in Solidworks. I have to come up with a structure that would fit in the area is 5x5mm2, using a structural Si thickness layer of 25mm. I performed both static and dynamic analysis to validate the design as well as comparing the result of my models.</p>						
+							</section>
+
+							<hr />
+
+							<section id="nand3">
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/nand1.PNG" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/nand2.PNG" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/nand3.PNG" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/nand4.PNG" alt="" /></span></div>
+									</div>
+								</div>
+								<header>
+									<h3>NAND3 - Layout Design</h3>	
+									<p>Cadence</p>
+								</header>
+								<p>The scope of this project was to design a NAND3 layout. The main objective was to both optimized
+									to area used, and minimized the delay, with symmetrical fall time and rise time. The design and
+									simulation was done in Cadence.</p>						
+							</section>
+
+							<hr />
+
+							<section id="sls">
+								<header>
+									<h3>SLS 3D Printer Control System modeling</h3>	
+									<p>Matlab / Simulink</p>
+								</header>
+								<p>The scope of this project was to simulate and tune a selective laser sintering (SLS) 3D printing
+									process. In this system, the laser is guided by two spherical wrists giving the system 2 degree
+									of freedom. The simulation was to build a basic cylinder. A set of Maxon motor was modelled to be
+									used in the simulation. This project can be broken down in two parts: modelling the system and
+									designing and tuning the system using a PID controller.</p>		
+								<p>For the modelling, I calculated the wrists’ kinematic. In short, it’s a set of function that	convert
+									the voltage input into a cartesian coordinate. Other calculation includes the transfer function	for
+									electrical and mechanical dynamics. For tuning, I calculated the open-loop gain and did a root locus
+									analysis for the system. Along with response analysis, the system was tuned by trial-and-error.</p>				
+							</section>
+
+							<hr />
+
+							<section id="elevatorsim">
+								<header>
+									<h3>ElevatorSim</h3>	
+									<p>C++</p>
+								</header>
+								<p>The scope of this project was to design and implement an elevator simulation program simulating two elevator working concurrently.</p>
+								<p>I devised the logic that the elevator algorithm would follow to efficiently services the user. I made use of inter-process communication such as data pools and pipelines mailboxes. The code also contain process and thread synchronisation, to ensure the simulation would run correctly. I also implemented a command line GUI to display the simulation.</p>
+								<a href="https://github.com/NatLim/ElevatorSim"><i class="fab fa-github fa-2x"></i> repo</a> *for reference purpose only
+							</section>
+
+							<hr />
+
+							<section id="projectMBC">
+								<header>
+									<h3>Order and Inventory Management System - ProjectMBC</h3>	
+									<p>PHP / SQL / Apache</p>
+								</header>
+								<p>The scope of this project was to design and code an order and inventory management system for a micro-bakery. The project uses PHP frontend connected to an SQL database, and deployed on a local apache server. The main focus of the project was accessibility and ease of use.</p>
+								<ul>
+									<li> I designed the structure of the database.</li>
+									<li>I implemented functions to generate forms and table with all of the available products, this make this project scalable as more products can be add in the future without having to change the code structure.</li>
+								</ul>
+								<a href="https://github.com/NatLim/MungBeanCakeLocal-V1.0"><i class="fab fa-github fa-2x"></i> repo</a> *for reference purpose only and may be outdated as the live server is in a private repo
+							</section>
+					</div>
+				</div>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/lnatkamol" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/NatLim" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:n.limapichat@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Natkamol Limapichat. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
